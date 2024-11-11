@@ -2,15 +2,15 @@ package com.ProjetoJava.MeuProjeto.models;
 
 import jakarta.persistence.*;
 
-@Entity  // entidade JPA, sera mapeada para a tabela
+@Entity  
 public class Lembrete {
-    @Id // marca id como chave primaria da tabela
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // indica que o valor sera gerado automaticamnete pelo BD
+    @Id 
+    @GeneratedValue(strategy = GenerationType.IDENTITY) 
     private Long id;
     private String horario;
-    private String titulo; // Mudei "nome" para "titulo"
+    private String titulo; 
 
-    @Column(name = "dataL")
+    @Column(name = "dataL") // porque no banco de dados coloquei como dataL
     private String data;
 
     public String getData() {
@@ -37,11 +37,11 @@ public class Lembrete {
         this.id = id;
     }
 
-    public String getTitulo() { // Ajuste no getter
+    public String getTitulo() { 
         return titulo;
     }
 
-    public void setTitulo(String titulo) { // Ajuste no setter
+    public void setTitulo(String titulo) { 
         this.titulo = titulo;
     }
 }
