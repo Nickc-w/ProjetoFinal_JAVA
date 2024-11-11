@@ -1,84 +1,83 @@
-
+/* Da pagina de Bem vindo  */
 .description-container {
-    background-color: #e8ecea; /* Cor de fundo do contêiner da descrição */
-    padding: 15px 20px; /* Espaçamento interno para deixar o contêiner maior */
-    border-radius: 15px; /* Bordas arredondadas */
-    margin: 10px; /* Margem em volta do contêiner */
+    background-color: #e8ecea; 
+    padding: 15px 20px; 
+    border-radius: 15px; 
+    margin: 10px; 
     margin-left: 480px ;
-    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para o contêiner */
+    transition: background-color 0.3s ease; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     width: 500px;
 }
 
 .description-container:hover {
-    background-color: #e881e8; /* Cor de fundo ao passar o mouse */
+    background-color: #e881e8; 
 }
 
 .description {
-    font-size: 18px; /* Tamanho da fonte da descrição */
-    color: #333; /* Cor do texto da descrição */
-    font-family: "Droid Sans";/* Fonte da descrição */
-    text-align: center; /* Centraliza o texto da descrição */
+    font-size: 18px; 
+    color: #333; 
+    font-family: "Droid Sans";
+    text-align: center; 
 }
 
 body {
-    text-align: center; /* Centraliza o texto no corpo da página */
-    margin: 20px; /* Margem ao redor do corpo */
-    font-family: Arial, sans-serif; /* Fonte padrão */
-    background-color: #bcd5ff; /* Cor de fundo clara */
+    text-align: center; 
+    margin: 20px; 
+    font-family: Arial, sans-serif; 
+    background-color: #bcd5ff; 
 }
 
 h1 {
 
-    color: #333; /* Cor do título */
-    font-size: 2.5em; /* Tamanho do título */
-    margin-botton: 200px; /* Espaço abaixo do título */
+    color: #333; 
+    font-size: 2.5em; 
+    margin-botton: 200px; 
 }
 
 .header-content {
-    display: flex; /* Cria um layout flexível */
-    align-items: center; /* Alinha verticalmente a imagem e o título */
-    justify-content: center; /* Centraliza horizontalmente */
-    background-color: #bcd5ff; /* Cor de fundo do contêiner */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color: #bcd5ff; 
 }
 
 .image {
-    margin-right: 20px; /* Espaço entre a imagem e o título */
-    max-width: 100%; /* Ajusta a imagem para caber na tela */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px; /* Bordas arredondadas na imagem */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
+    margin-right: 20px; 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 
 .description {
-    font-size: 20px; /* Tamanho da fonte maior */
-    margin: 20px 0; /* Margem acima e abaixo da descrição */
-    color: #555; /* Cor do texto da descrição */
+    font-size: 20px;
+    margin: 20px 0; 
+    color: #555; 
 }
 
 .start-button {
-    background-color: #a117a1; /* Cor verde */
-    border: none; /* Remove a borda padrão */
-    color: white; /* Texto branco */
-    padding: 15px 30px; /* Espaçamento interno aumentado */
-    text-align: center; /* Centraliza o texto */
-    text-decoration: none; /* Remove sublinhado */
-    display: inline-block; /* Permite definir a largura do botão */
-    font-size: 18px; /* Tamanho da fonte maior */
-    margin-top: 20px; /* Espaço acima do botão */
-    cursor: pointer; /* Muda o cursor ao passar por cima */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+    background-color: #a117a1; 
+    border: none; 
+    color: white; 
+    padding: 15px 30px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 18px; 
+    margin-top: 20px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .start-button:hover {
-    background-color: #e881e8; /* Cor um pouco mais escura ao passar o mouse */
-    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+    background-color: #e881e8; 
+    transform: translateY(-2px); 
 }
 
 .start-button:active {
-    transform: translateY(1px); /* Efeito de pressionar ao clicar */
+    transform: translateY(1px); 
 }
 
 
