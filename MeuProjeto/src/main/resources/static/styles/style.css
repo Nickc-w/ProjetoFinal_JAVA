@@ -41,15 +41,15 @@
 }
 
 .btn:hover {
-    background-color: #d953c3; /* Cor ao passar o mouse */
+    background-color: #d953c3; 
 }
 
 .btn-edit {
-    background-color: #5cb85c; /* Cor diferente para editar */
+    background-color: #5cb85c;
 }
 
 .btn-delete {
-    background-color: #d9534f; /* Cor diferente para deletar */
+    background-color: #d9534f; 
 }
 
 body {
@@ -97,21 +97,21 @@ input[type="date"] {
 #adicionar {
     width: 250px;
     margin-left: 5px;
-    color: white; /* Cor do texto */
-    border: none; /* Sem borda */
+    color: white; 
+    border: none; 
     background-color: #ae0eaa;
-    border-radius: 5px; /* Bordas arredondadas */
-    padding: 10px 15px; /* Espaçamento interno */
-    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
-    text-decoration: none; /* Remove sublinhado */
-    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
     font-size: 16px;
 
 }
 
 
 #voltar:hover {
-    background-color: #d953c3; /* Cor ao passar o mouse no botão voltar */
+    background-color: #d953c3; 
 }
 
 
@@ -134,47 +134,47 @@ input[type="date"] {
 
 
 .btn:hover {
-    background-color: #d953c3; /* Cor ao passar o mouse */
+    background-color: #d953c3; 
 }
 
 .btn-edit {
     margin-left: 120px;
     width: 50px;
-    background-color: #5cb85c; /* Cor de fundo verde */
-    color: white; /* Cor do texto */
-    border: 1px solid #4cae4c; /* Borda um pouco mais escura */
-    border-radius: 5px; /* Bordas arredondadas */
-    padding: 10px 15px; /* Padding interno */
-    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-    text-decoration: none; /* Sem sublinhado */
-    display: inline-block; /* Para que o botão seja um bloco inline */
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    background-color: #5cb85c; 
+    color: white; 
+    border: 1px solid #4cae4c; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    text-decoration: none; 
+    display: inline-block; 
+    transition: background-color 0.3s ease; 
 }
 
 .btn-edit:hover {
-    background-color: #4cae4c; /* Cor de fundo ao passar o mouse */
+    background-color: #4cae4c; 
 }
 
 .btn-delete {
     width: 50px;
-    background-color: #d9534f; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    padding: 10px 15px; /* Espaçamento interno */
-    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
-    text-decoration: none; /* Remove sublinhado */
-    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+    background-color: #d9534f; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer;
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
 }
 
 .btn-delete:hover {
-    background-color: #c9302c; /* Cor ao passar o mouse */
+    background-color: #c9302c; 
 }
 
 
 
 .btn-back {
-    background-color: #5bc0de; /* Cor diferente para o botão de voltar */
+    background-color: #5bc0de; 
 }
 
 #voltar{
@@ -183,7 +183,7 @@ input[type="date"] {
 
 
 #voltar:hover {
-    background-color: #d953c3; /* Cor ao passar o mouse no botão voltar */
+    background-color: #d953c3; 
 }
 
 
@@ -193,7 +193,7 @@ input[type="date"] {
 
 
 #voltar2:hover {
-    background-color: #d953c3; /* Cor ao passar o mouse no botão voltar */
+    background-color: #d953c3; 
 }
 
 
@@ -215,11 +215,11 @@ input[type="date"] {
 
 
 #buscar:hover {
-    background-color: #d953c3; /* Cor ao passar o mouse no botão voltar */
+    background-color: #d953c3; 
 }
 
 #buscarlemb:hover {
-    background-color: #d953c3; /* Cor ao passar o mouse no botão voltar */
+    background-color: #d953c3; 
 }
 
 
@@ -228,24 +228,24 @@ input[type="date"] {
 }
 
 .lembrete {
-    display: flex; /* Habilita o Flexbox */
-    justify-content: space-between; /* Distribui espaço entre os itens */
-    align-items: center; /* Alinha os itens verticalmente ao centro */
-    margin-bottom: 15px; /* Espaçamento entre lembretes */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 15px; 
 }
 
 .lembrete h2 {
-    flex: 2; /* Título ocupa mais espaço */
-    max-width: 200px; /* Largura máxima para o título */
-    overflow: hidden; /* Oculta o texto que ultrapassa a largura */
-    text-overflow: ellipsis; /* Adiciona '...' ao final se o texto for muito longo */
-    white-space: nowrap; /* Evita quebras de linha */
+    flex: 2; 
+    max-width: 200px; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
 }
 
 .lembrete p {
-    flex: 1; /* Horário e data ocupam menos espaço */
-    margin: 5px 0; /* Define margens uniformes para p */
-    text-align: left; /* Alinha o texto à esquerda */
+    flex: 1; 
+    margin: 5px 0; 
+    text-align: left; 
 }
 
 
