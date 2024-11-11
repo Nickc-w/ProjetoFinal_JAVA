@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Lembretes</title>
+    <link rel="stylesheet" th:href="@{/styles/style.css}">
+</head>
+<body>
+<div class="container">
+
+    <h1>Lista de Lembretes</h1>
+    <button id="adicionar" onclick="window.location.href='/lembretes/novo'" class="btn">Adicionar Novo Lembrete</button>
+    <button id="buscarlemb" onclick="window.location.href='/lembretes/busca'" class="btn">Buscar Lembrete</button>
+
+    <div th:each="lembrete : ${lembretes}" class="lembrete">
+        <div>
+            <h2 th:text="${lembrete.titulo}"></h2>
+            <p th:text="'Horário: ' + ${lembrete.horario}"></p>
+            <p th:text="'Data: ' + ${lembrete.data}"></p>
+        </div>
+        <div>
+            <a th:href="@{/lembretes/editar/{id}(id=${lembrete.id})}" class="btn btn-edit">Editar</a>
+            <a th:href="@{/lembretes/deletar/{id}(id=${lembrete.id})}" class="btn btn-delete">Deletar</a>
+        </div>
+    </div>
+    <button id="voltar2" onclick="window.location.href='/lembretes'" class="btn">Voltar</button>
+
+</div>
+</body>
+</html>

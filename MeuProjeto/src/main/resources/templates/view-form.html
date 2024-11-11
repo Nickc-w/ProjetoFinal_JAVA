@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${lembrete.id != null ? 'Editar Lembrete' : 'Adicionar Lembrete'}"></title>
+    <link rel="stylesheet" th:href="@{/styles/style.css}">
+</head>
+<body>
+<div class="container">
+    <h1 th:text="${lembrete.id != null ? 'Editar Lembrete' : 'Adicionar Lembrete'}"></h1>
+    <form id="form-lembrete" action="/lembretes/salvar" method="post">
+        <input type="hidden" name="id" th:value="${lembrete.id}"/> <!-- Para passar o ID do lembrete existente -->
+
+        <div class="form-group">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" th:value="${lembrete.titulo}" required placeholder="Digite o título">
+        </div>
+
+        <div class="form-group">
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" name="horario" th:value="${lembrete.horario}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" th:value="${lembrete.data}" required
+                   min="${#dates.format(#dates.parse('today'), 'yyyy-MM-dd')}">
+        </div>
+
+        <button id="salvar" type="submit" class="btn">Salvar Lembrete</button>
+    </form>
+    <button id="voltar" class="btn btn-back" onclick="window.location.href='/lembretes/entrada'">Voltar</button>
+</div>
+</body>
+</html>

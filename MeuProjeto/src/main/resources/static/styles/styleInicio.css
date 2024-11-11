@@ -1,0 +1,84 @@
+
+.description-container {
+    background-color: #e8ecea; /* Cor de fundo do contêiner da descrição */
+    padding: 15px 20px; /* Espaçamento interno para deixar o contêiner maior */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin: 10px; /* Margem em volta do contêiner */
+    margin-left: 480px ;
+    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para o contêiner */
+    width: 500px;
+}
+
+.description-container:hover {
+    background-color: #e881e8; /* Cor de fundo ao passar o mouse */
+}
+
+.description {
+    font-size: 18px; /* Tamanho da fonte da descrição */
+    color: #333; /* Cor do texto da descrição */
+    font-family: "Droid Sans";/* Fonte da descrição */
+    text-align: center; /* Centraliza o texto da descrição */
+}
+
+body {
+    text-align: center; /* Centraliza o texto no corpo da página */
+    margin: 20px; /* Margem ao redor do corpo */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    background-color: #bcd5ff; /* Cor de fundo clara */
+}
+
+h1 {
+
+    color: #333; /* Cor do título */
+    font-size: 2.5em; /* Tamanho do título */
+    margin-botton: 200px; /* Espaço abaixo do título */
+}
+
+.header-content {
+    display: flex; /* Cria um layout flexível */
+    align-items: center; /* Alinha verticalmente a imagem e o título */
+    justify-content: center; /* Centraliza horizontalmente */
+    background-color: #bcd5ff; /* Cor de fundo do contêiner */
+}
+
+.image {
+    margin-right: 20px; /* Espaço entre a imagem e o título */
+    max-width: 100%; /* Ajusta a imagem para caber na tela */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+.description {
+    font-size: 20px; /* Tamanho da fonte maior */
+    margin: 20px 0; /* Margem acima e abaixo da descrição */
+    color: #555; /* Cor do texto da descrição */
+}
+
+.start-button {
+    background-color: #a117a1; /* Cor verde */
+    border: none; /* Remove a borda padrão */
+    color: white; /* Texto branco */
+    padding: 15px 30px; /* Espaçamento interno aumentado */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove sublinhado */
+    display: inline-block; /* Permite definir a largura do botão */
+    font-size: 18px; /* Tamanho da fonte maior */
+    margin-top: 20px; /* Espaço acima do botão */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+.start-button:hover {
+    background-color: #e881e8; /* Cor um pouco mais escura ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+.start-button:active {
+    transform: translateY(1px); /* Efeito de pressionar ao clicar */
+}
+
+

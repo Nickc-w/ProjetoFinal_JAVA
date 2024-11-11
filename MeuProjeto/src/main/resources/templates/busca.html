@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Lembrete</title>
+    <link rel="stylesheet" th:href="@{/styles/style.css}">
+</head>
+<body>
+<div class="container">
+
+    <h1>Buscar Lembrete</h1>
+    <form action="/lembretes/busca" method="get">
+        <input id="pc" type="text" name="keyword" placeholder="Digite a palavra-chave" required th:value="${keyword}">
+        <button id="buscar" type="submit">Buscar</button>
+    </form>
+
+    <h2>Resultados da Busca</h2>
+    <div th:if="${#lists.isEmpty(lembretesEncontrados)}">
+        <p>Nenhum lembrete encontrado.</p>
+    </div>
+    <div th:each="lembrete : ${lembretesEncontrados}" class="lembrete">
+        <h2 th:text="${lembrete.titulo}"></h2>
+        <p th:text="'Horário: ' + ${lembrete.horario}"></p>
+        <p th:text="'Data: ' + ${lembrete.data}"></p>
+    </div>
+
+    <button id="voltar" onclick="window.location.href='/lembretes/entrada'" class="btn">Voltar à Lista de Lembretes</button>
+
+</div>
+</body>
+</html>

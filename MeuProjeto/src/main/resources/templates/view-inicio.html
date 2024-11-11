@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ENTRADA</title>
+    <link rel="stylesheet" th:href="@{/styles/styleInicio.css}">
+</head>
+<body>
+
+<div class="header">
+    <div class="header-content">
+        <img th:src="@{/styles/pinzinho.jpg}" width="10%" alt="Imagem do pinzinho" class="image">
+        <h1>Bem-vindo!</h1>
+    </div>
+    <div class="description-container">
+        <p class="description">Dificuldades em lembrar de algo? Faremos isso por você! Comece a criar seus lembretes...</p>
+    </div>
+    <button class="start-button" th:onclick="'location.href=\'/lembretes/entrada\''">Começar</button>
+</div>
+
+</body>
+</html>
